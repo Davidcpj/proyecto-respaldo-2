@@ -1,9 +1,9 @@
+// App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from 'react-transition-group'; 
 import axios from "axios";
 import Usuario from "./components/Usuario/Usuario";
-import { Home } from './components/Home/Home';
+import Home from './components/Home/Home'; 
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Box from '@mui/material/Box';
@@ -30,11 +30,16 @@ function App() {
         <Route path="/Usuario" element={<Usuario />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/cart" element={<Cart cart={cart} />} />
-        <Route path="/" element={<Home addToCart={addToCart} />} />
+        <Route path="/" element={<Home addToCart={addToCart} products={products} />} /> {/* Passing products as a prop */}
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </Router>
   );
 }
+
+
+const products = [
+  
+];
 
 export default App;

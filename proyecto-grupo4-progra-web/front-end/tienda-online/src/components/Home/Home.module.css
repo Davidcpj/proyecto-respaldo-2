@@ -1,1 +1,31 @@
-.Home {}
+.header {
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  
+}
+
+.header-nav ul {
+  margin-top: 20px; 
+  
+}
+
+
+.header-nav li {
+  margin-bottom: 50px; 
+  
+}
+
+.footer {
+  margin-top: 50px; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  /* ... tus otros estilos ... */
+}
+
+.footer-content p {
+  margin-bottom: 20px; 
+}
+
+.footer-content ul {
+  margin-top: 20px; 
+}
